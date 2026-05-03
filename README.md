@@ -101,7 +101,7 @@ Agentforce (Atlas Reasoning Engine)
 
 ---
 
-## 🚀 Setup & Testing Instructions for Judges
+##  Setup & Testing Instructions for Judges
 
 ### Step 1 — Access the Org
 Use the admin credentials provided in the submission form to log into the 
@@ -137,7 +137,7 @@ Key pages to review in the org:
 
 ---
 
-## 🔐 External Dependencies
+##  External Dependencies
 
 ### Twilio WhatsApp Sandbox
 - **Provider**: Twilio
@@ -148,7 +148,7 @@ Key pages to review in the org:
 
 ---
 
-## 🔮 Future Improvements
+##  Future Improvements
 
 Given more time, we would:
 
@@ -166,7 +166,7 @@ Given more time, we would:
 
 ---
 
-## 👥 Team TurtleTech Tribe
+##  Team TurtleTech Tribe
 
 | Name | Role |
 |---|---|
@@ -178,7 +178,7 @@ Given more time, we would:
 
 ---
 
-## 📬 Contact
+##  Contact
 
 For any questions during judging, reach us at: kanishk.gupta@turtletechtribe.com(Mob- 8527650722)
 
