@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Bot xmlns="http://soap.sforce.com/2006/04/metadata">
-    <agentDSLEnabled>false</agentDSLEnabled>
-    <agentTemplate>SvcCopilotTmpl__EinsteinServiceAgent</agentTemplate>
-    <agentType>EinsteinServiceAgent</agentType>
     <botMlDomain>
         <label>New Bank Sathi Service Agent</label>
         <name>New_Bank_Sathi_Service_Agent</name>
     </botMlDomain>
-    <botSource>None</botSource>
     <botUser>agentforce_service_agent@00dbm00000fl3cm1374106309.ext</botUser>
     <contextVariables>
         <contextVariableMappings>
@@ -46,9 +42,7 @@
             <messageType>Line</messageType>
         </contextVariableMappings>
         <dataType>Id</dataType>
-        <description>This variable may also be referred to as MessagingEndUser ContactId</description>
         <developerName>ContactId</developerName>
-        <includeInPrompt>false</includeInPrompt>
         <label>Contact Id</label>
     </contextVariables>
     <contextVariables>
@@ -88,9 +82,7 @@
             <messageType>Custom</messageType>
         </contextVariableMappings>
         <dataType>Id</dataType>
-        <description>This variable may also be referred to as MessagingEndUser Id</description>
         <developerName>EndUserId</developerName>
-        <includeInPrompt>true</includeInPrompt>
         <label>End User Id</label>
     </contextVariables>
     <contextVariables>
@@ -130,9 +122,7 @@
             <messageType>WhatsApp</messageType>
         </contextVariableMappings>
         <dataType>Text</dataType>
-        <description>This variable may also be referred to as MessagingSession EndUserLanguage</description>
         <developerName>EndUserLanguage</developerName>
-        <includeInPrompt>false</includeInPrompt>
         <label>End User Language</label>
     </contextVariables>
     <contextVariables>
@@ -172,9 +162,7 @@
             <messageType>EmbeddedMessaging</messageType>
         </contextVariableMappings>
         <dataType>Id</dataType>
-        <description>This variable may also be referred to as MessagingSession Id</description>
         <developerName>RoutableId</developerName>
-        <includeInPrompt>true</includeInPrompt>
         <label>Routable Id</label>
     </contextVariables>
     <contextVariables>
@@ -214,9 +202,7 @@
             <messageType>Line</messageType>
         </contextVariableMappings>
         <dataType>Id</dataType>
-        <description>This variable may also be referred to as VoiceCall Id</description>
         <developerName>VoiceCallId</developerName>
-        <includeInPrompt>true</includeInPrompt>
         <label>Voice Call Id</label>
     </contextVariables>
     <description>A WhatsApp banking assistant that verifies users via OTP before any banking action. Once verified, it handles balance, transactions, disputes, and EMI queries in a simple, secure conversation.</description>

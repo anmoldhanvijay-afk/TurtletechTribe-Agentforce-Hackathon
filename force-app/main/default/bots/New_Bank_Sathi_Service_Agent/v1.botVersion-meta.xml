@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <BotVersion xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>v4</fullName>
+    <fullName>v1</fullName>
     <articleAnswersGPTEnabled>false</articleAnswersGPTEnabled>
     <botDialogs>
         <botSteps>
@@ -61,37 +61,12 @@
     </botDialogs>
     <citationsEnabled>false</citationsEnabled>
     <conversationDefinitionPlanners>
-        <genAiPlannerName>New_Bank_Sathi_Service_Agent_v2_v4</genAiPlannerName>
+        <genAiPlannerName>New_Bank_Sathi_Service_Agent</genAiPlannerName>
     </conversationDefinitionPlanners>
     <conversationVariables>
         <dataType>Text</dataType>
-        <developerName>accountId</developerName>
-        <label>accountId</label>
-    </conversationVariables>
-    <conversationVariables>
-        <dataType>Text</dataType>
-        <developerName>authenticationKey</developerName>
-        <label>authenticationKey</label>
-    </conversationVariables>
-    <conversationVariables>
-        <dataType>Text</dataType>
-        <developerName>caseNumber</developerName>
-        <label>caseNumber</label>
-    </conversationVariables>
-    <conversationVariables>
-        <dataType>Text</dataType>
-        <developerName>customerId</developerName>
-        <label>customerId</label>
-    </conversationVariables>
-    <conversationVariables>
-        <dataType>Text</dataType>
-        <developerName>customerType</developerName>
-        <label>customerType</label>
-    </conversationVariables>
-    <conversationVariables>
-        <dataType>Text</dataType>
-        <developerName>emailCaseId</developerName>
-        <label>emailCaseId</label>
+        <developerName>VerifiedCustomerId</developerName>
+        <label>VerifiedCustomerId</label>
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
@@ -100,23 +75,8 @@
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
-        <developerName>endUserEmail</developerName>
-        <label>endUserEmail</label>
-    </conversationVariables>
-    <conversationVariables>
-        <dataType>Text</dataType>
-        <developerName>financialAccountId</developerName>
-        <label>Financial Account Id</label>
-    </conversationVariables>
-    <conversationVariables>
-        <dataType>Boolean</dataType>
-        <developerName>isConfirmed</developerName>
-        <label>isConfirmed</label>
-    </conversationVariables>
-    <conversationVariables>
-        <dataType>Boolean</dataType>
-        <developerName>isValidOTP</developerName>
-        <label>isValidOTP</label>
+        <developerName>customerType</developerName>
+        <label>customerType</label>
     </conversationVariables>
     <conversationVariables>
         <dataType>Boolean</dataType>
@@ -124,34 +84,34 @@
         <label>isVerified</label>
     </conversationVariables>
     <conversationVariables>
-        <dataType>Boolean</dataType>
-        <developerName>loanConfirmed</developerName>
-        <label>loanConfirmed</label>
+        <dataType>Text</dataType>
+        <developerName>customerId</developerName>
+        <label>customerId</label>
     </conversationVariables>
     <conversationVariables>
-        <dataType>Number</dataType>
-        <developerName>loanCount</developerName>
-        <label>loanCount</label>
+        <dataType>Text</dataType>
+        <developerName>authenticationKey</developerName>
+        <label>authenticationKey</label>
     </conversationVariables>
     <conversationVariables>
-        <dataType>Number</dataType>
-        <developerName>loanOtp</developerName>
-        <label>loanOtp</label>
+        <dataType>Text</dataType>
+        <developerName>emailCaseId</developerName>
+        <label>emailCaseId</label>
     </conversationVariables>
     <conversationVariables>
-        <dataType>Number</dataType>
-        <developerName>oldEMI</developerName>
-        <label>oldEMI</label>
+        <dataType>Text</dataType>
+        <developerName>endUserEmail</developerName>
+        <label>endUserEmail</label>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <developerName>accountId</developerName>
+        <label>accountId</label>
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
         <developerName>OtpValue</developerName>
         <label>OtpValue</label>
-    </conversationVariables>
-    <conversationVariables>
-        <dataType>Number</dataType>
-        <developerName>otpValueNumber</developerName>
-        <label>otpValueNumber</label>
     </conversationVariables>
     <conversationVariables>
         <dataType>Number</dataType>
@@ -165,8 +125,23 @@
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
-        <developerName>SecondOTP</developerName>
-        <label>SecondOTP</label>
+        <developerName>financialAccountId</developerName>
+        <label>Financial Account Id</label>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Boolean</dataType>
+        <developerName>typeOfAccountFound</developerName>
+        <label>typeOfAccountFound</label>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <developerName>typeOfAccount</developerName>
+        <label>typeOfAccount</label>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <developerName>userIntent</developerName>
+        <label>userIntent</label>
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
@@ -180,28 +155,53 @@
     </conversationVariables>
     <conversationVariables>
         <dataType>Number</dataType>
+        <developerName>loanCount</developerName>
+        <label>loanCount</label>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Number</dataType>
+        <developerName>otpValueNumber</developerName>
+        <label>otpValueNumber</label>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Number</dataType>
+        <developerName>oldEMI</developerName>
+        <label>oldEMI</label>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Text</dataType>
+        <developerName>caseNumber</developerName>
+        <label>caseNumber</label>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Boolean</dataType>
+        <developerName>isConfirmed</developerName>
+        <label>isConfirmed</label>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Number</dataType>
         <developerName>transactionConfirmationCode</developerName>
         <label>transactionConfirmationCode</label>
     </conversationVariables>
     <conversationVariables>
-        <dataType>Text</dataType>
-        <developerName>typeOfAccount</developerName>
-        <label>typeOfAccount</label>
+        <dataType>Boolean</dataType>
+        <developerName>isValidOTP</developerName>
+        <label>isValidOTP</label>
     </conversationVariables>
     <conversationVariables>
         <dataType>Boolean</dataType>
-        <developerName>typeOfAccountFound</developerName>
-        <label>typeOfAccountFound</label>
+        <developerName>loanConfirmed</developerName>
+        <label>loanConfirmed</label>
+    </conversationVariables>
+    <conversationVariables>
+        <dataType>Number</dataType>
+        <developerName>loanOtp</developerName>
+        <label>loanOtp</label>
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
-        <developerName>userIntent</developerName>
-        <label>userIntent</label>
-    </conversationVariables>
-    <conversationVariables>
-        <dataType>Text</dataType>
-        <developerName>VerifiedCustomerId</developerName>
-        <label>VerifiedCustomerId</label>
+        <developerName>SecondOTP</developerName>
+        <label>SecondOTP</label>
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>

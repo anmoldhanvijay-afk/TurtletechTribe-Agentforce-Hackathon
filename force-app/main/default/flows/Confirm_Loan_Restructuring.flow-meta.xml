@@ -24,11 +24,9 @@
             </value>
         </inputParameters>
         <nameSegment>VerifyOTPService</nameSegment>
-        <offset>0</offset>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </actionCalls>
     <apiVersion>66.0</apiVersion>
-    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <assignments>
         <name>Option_B_Values</name>
         <label>Option B Values</label>
