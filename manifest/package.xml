@@ -3,11 +3,9 @@
 
     <!-- Apex -->
     <types>
-        <members>OAuthTokenUtil</members>
+        
         <members>DocumentAI</members>
-        <members>OAuthService</members>
         <members>DocumentAIService</members>
-        <members>RunDocumentAIFromCase</members>
         <members>sfAuthService</members>
         <members>EMICalculator</members>
         <members>DocumentAIResponse</members>
@@ -77,7 +75,6 @@
 		<members>Default_Creds.Default_Config</members>
 		<members>QLabs.Org_Identifier</members>
 		<members>Twilio_Configuration.Production</members>
-		<members>Twilio_Configuration.Production2</members>
 		<members>WhatsApp_Config.Access_Token</members>
 		<members>xDO_Base_QBrix_Register.Qbrix_6_SDO_DemoBoost</members>
 		<members>xDO_Base_QBrix_Register.qbrix_0_org_beacon</members>
