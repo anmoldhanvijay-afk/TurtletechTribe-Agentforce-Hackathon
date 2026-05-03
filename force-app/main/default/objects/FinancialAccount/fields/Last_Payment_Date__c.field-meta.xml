@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Last_Payment_Date__c</fullName>
+    <description>Records the most recent date on which the customer made a payment towards their credit card outstanding balance. Used to track payment history and display in customer-facing communications.</description>
+    <inlineHelpText>Enter the date of the customer&apos;s last credit card payment.</inlineHelpText>
+    <label>Last Payment Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <type>Date</type>
+</CustomField>

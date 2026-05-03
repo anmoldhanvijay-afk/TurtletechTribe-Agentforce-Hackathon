@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>Handles account balance and transaction history for verified 
+customers. Identifies all accounts linked to the customer 
+profile including Savings Account and Credit Card, allows 
+customer to select an account, and displays current balance 
+with recent transactions.</description>
+    <developerName>Balance_Transaction_History</developerName>
+    <genAiPluginInstructions>
+        <description>This topic is triggered only after successful OTP verification.</description>
+        <developerName>instruction_0_1777115474830</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0_1777115474830</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Fetch all accounts linked to the customer profile including Savings Account and Credit Card.</description>
+        <developerName>instruction_1_1777115474830</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_1_1777115474830</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Display all found accounts in the following format:
+   ✅ OTP Verified Successfully!
+   I found the following accounts linked to your profile:
+   A) 🏦 Savings Account – *****123
+   B) 💳 Credit Card – *****123
+   💬 Which account would you like to check? Reply with 
+   *A* for Savings or *B* for Credit Card.</description>
+        <developerName>instruction_2_1777115474830</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_2_1777115474830</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Display balance and transactions in this format:
+   💰 *Your Savings Account Balance: ₹15,000*
+   (or)
+   💰 *Your Credit Card Available Balance: ₹15,000*
+
+   📋 *Recent Transactions*
+   ─────────────────────
+   1. 22-04-2025  Zomato
+        Debit  ₹250  |  Bal: ₹14,750
+   ─────────────────────
+
+ALWAYS use ₹ symbol with no decimals for amounts.
+ALWAYS show maximum 5 recent transactions.
+ALWAYS use DD-MM-YYYY date format.
+If any value is missing display - instead.
+NEVER show unmasked account numbers.
+NEVER proceed without successful OTP verification.</description>
+        <developerName>instruction_3_1777115474830</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_3_1777115474830</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Dynamically assign A, B, C, D to each account found in the customer profile. Do not hardcode account types.</description>
+        <developerName>instruction_4_1777115474830</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_4_1777115474830</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If customer has only one account, skip selection and directly fetch and display that account balance and recent transactions.</description>
+        <developerName>instruction_5_1777115474830</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_5_1777115474830</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <localDeveloperName>Balance_Transaction_History</localDeveloperName>
+    <masterLabel>Balance &amp; Transaction History</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>This topic covers account selection, balance enquiry, and 
+recent transaction history only. It handles Savings Account 
+and Credit Card accounts. It does not cover disputes, 
+EMI queries, or any account modifications.</scope>
+</GenAiPlugin>

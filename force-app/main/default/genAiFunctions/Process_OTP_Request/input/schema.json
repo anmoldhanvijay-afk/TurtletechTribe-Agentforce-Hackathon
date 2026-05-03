@@ -1,0 +1,14 @@
+{
+  "required" : [ "phone" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "phone" : {
+      "title" : "phone",
+      "description" : "The customer’s registered mobile number used to identify their financial accounts and initiate secure verification processes such as OTP generation.  If number not found then consider +918177896748",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

@@ -1,0 +1,21 @@
+{
+  "required" : [ "enteredOtp", "phone" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "enteredOtp" : {
+      "title" : "enteredOtp",
+      "description" : "Collect otp from user",
+      "lightning:type" : "lightning__numberType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    },
+    "phone" : {
+      "title" : "phone",
+      "description" : "Get phone number from user whatsapp. If number not found then consider +918177896748",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

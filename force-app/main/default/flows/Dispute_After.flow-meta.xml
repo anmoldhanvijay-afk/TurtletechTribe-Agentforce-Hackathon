@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
+    <decisions>
+        <name>Amount_greater_than_50k</name>
+        <label>Amount greater than 50k</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <defaultConnector>
+            <targetReference>Create_Dispute_Item</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.DisputedAmount</leftValueReference>
+                <operator>GreaterThanOrEqualTo</operator>
+                <rightValue>
+                    <numberValue>500000.0</numberValue>
+                </rightValue>
+            </conditions>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <formulas>
+        <name>invoiceDate</name>
+        <dataType>Date</dataType>
+        <expression>DATE(
+    VALUE(RIGHT({!$Record.Case.Invoice_Date__c}, 4)),
+    CASE(MID({!$Record.Case.Invoice_Date__c}, 4, 3),
+        &quot;Jan&quot;, 1, &quot;Feb&quot;, 2, &quot;Mar&quot;, 3, &quot;Apr&quot;, 4,
+        &quot;May&quot;, 5, &quot;Jun&quot;, 6, &quot;Jul&quot;, 7, &quot;Aug&quot;, 8,
+        &quot;Sep&quot;, 9, &quot;Oct&quot;, 10, &quot;Nov&quot;, 11, &quot;Dec&quot;, 12,
+        0
+    ),
+    VALUE(LEFT({!$Record.Case.Invoice_Date__c}, 2))
+)</expression>
+    </formulas>
+    <interviewLabel>Dispute: After {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Dispute: After</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <name>Create_Dispute_Item</name>
+        <label>Create Dispute Item</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Dispute_Item_Chargeback</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>CurrencyIsoCode</field>
+            <value>
+                <stringValue>INR</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>DisputeId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>DisputedAmount</field>
+            <value>
+                <elementReference>$Record.DisputedAmount</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Submitted</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>TransactionAmount</field>
+            <value>
+                <elementReference>$Record.Total_Fare__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>TransactionDate</field>
+            <value>
+                <elementReference>invoiceDate</elementReference>
+            </value>
+        </inputAssignments>
+        <object>DisputeItem</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <name>Dispute_Item_Chargeback</name>
+        <label>Dispute Item Chargeback</label>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <inputAssignments>
+            <field>CurrencyIsoCode</field>
+            <value>
+                <stringValue>INR</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>DisputeItemId</field>
+            <value>
+                <elementReference>Create_Dispute_Item.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>In Review</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type</field>
+            <value>
+                <stringValue>Dispute Request</stringValue>
+            </value>
+        </inputAssignments>
+        <object>DisputeItemChargeback</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>0</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Amount_greater_than_50k</targetReference>
+        </connector>
+        <filterFormula>CONTAINS({!$Record.Owner:User.Username}, &quot;einstein&quot;)</filterFormula>
+        <object>Dispute</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

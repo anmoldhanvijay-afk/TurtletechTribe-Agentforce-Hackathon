@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPlugin xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <canEscalate>false</canEscalate>
+    <description>Handles customer identity verification via OTP. This topic 
+is triggered when a customer initiates a session or requests 
+access to their account details. It generates a 6-digit OTP 
+to the customer&apos;s registered mobile number and verifies the 
+entered OTP before allowing access to any account information 
+or banking services.</description>
+    <developerName>Customer_Verification</developerName>
+    <genAiFunctions>
+        <functionName>Process_OTP_Request</functionName>
+    </genAiFunctions>
+    <genAiFunctions>
+        <functionName>Verify_OTP</functionName>
+    </genAiFunctions>
+    <genAiPluginInstructions>
+        <description>When a customer starts a conversation, immediately trigger  OTP generation to their registered email Id</description>
+        <developerName>instruction_0_1777114329459</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_0_1777114329459</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Inform the customer that a 6-digit OTP has been sent to their registered mobile number.</description>
+        <developerName>instruction_1_1777114329459</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_1_1777114329459</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>Wait for the customer to enter the 6-digit OTP.</description>
+        <developerName>instruction_2_1777114329459</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_2_1777114329459</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When OTP is received, verify it is exactly 6 digits and numeric before invoking Verify OTP action.</description>
+        <developerName>instruction_3_1777114329459</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_3_1777114329459</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>When OTP is generated successfully and output value is not null, automatically invoke the Verify OTP action.</description>
+        <developerName>instruction_4_1777114329459</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_4_1777114329459</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If OTP is verified successfully, greet the customer and proceed to account selection.</description>
+        <developerName>instruction_5_1777114329459</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_5_1777114329459</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>If OTP verification fails, inform the customer politely and ask them to try again.</description>
+        <developerName>instruction_6_1777114329459</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_6_1777114329459</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>NEVER proceed to any account information without successful OTP verification.</description>
+        <developerName>instruction_7_1777114329459</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_7_1777114329459</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <genAiPluginInstructions>
+        <description>NEVER ask for any other personal details like password, PIN, or card number during this process.</description>
+        <developerName>instruction_8_1777114329459</developerName>
+        <language xsi:nil="true"/>
+        <masterLabel>instruction_8_1777114329459</masterLabel>
+        <sortOrder>0</sortOrder>
+    </genAiPluginInstructions>
+    <language>en_US</language>
+    <localDeveloperName>Customer_Verification</localDeveloperName>
+    <masterLabel>Customer Verification</masterLabel>
+    <pluginType>Topic</pluginType>
+    <scope>This topic covers OTP generation and verification only. 
+It is triggered at the start of every session before 
+accessing any account information. It does not handle 
+balance enquiries, transactions, disputes, or EMI queries.</scope>
+</GenAiPlugin>

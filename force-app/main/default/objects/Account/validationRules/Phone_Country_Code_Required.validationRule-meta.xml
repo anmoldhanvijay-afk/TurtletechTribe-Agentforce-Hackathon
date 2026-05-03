@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Phone_Country_Code_Required</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(
+  NOT(ISBLANK(Phone)),
+  LEFT(Phone, 1) &lt;&gt; &apos;+&apos;
+)</errorConditionFormula>
+    <errorDisplayField>Phone</errorDisplayField>
+    <errorMessage>Phone number must include country 
+code starting with +
+Example: +917008850654
+No spaces allowed.</errorMessage>
+</ValidationRule>

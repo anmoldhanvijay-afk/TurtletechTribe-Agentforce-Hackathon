@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersionIdentifier>SNHbsMHjip9HIrxt4j7R7WuXEsnjcy+zEDLIUQOP4ZE=_1</activeVersionIdentifier>
+    <developerName>Handle_JSON_From_Document_AI</developerName>
+    <masterLabel>Handle JSON From Document AI</masterLabel>
+    <overridable>false</overridable>
+    <templateVersions>
+        <content>Instruction:
+You are a JSON data formatter.
+
+Input:
+You will receive raw JSON as a string that may include schema, metadata, or other non-essential fields.
+
+Raw JSON Input:
+Input:inputString
+
+Task:
+- Parse the JSON.
+- Ignore technical fields like schema, metadata, or keys starting with _ that don&apos;t add meaning for a user.
+- Convert the remaining key-value pairs into a clean, human-readable format. &gt; Label: Value; for each pair.
+- Separate pairs with ; and add a line break between logical sections if there are nested objects or arrays.
+- Label should be continuous without spaces, add _ if necessary
+
+Example Output &gt;
+Candidate_residential_state:TX;Candidate_residential_zip_or_pin_code: 78701;Street_address:1456 Oak Avenue;Candidate_residential_city:Austin;Other_Phone_number:(512) 555-0347;Mobile_phone_number:(512) 555-0892
+</content>
+        <fileDroppingStrategy>{&quot;dropFilesBy&quot;:&quot;LAST_MODIFIED_DATE&quot;,&quot;dropFileStartingWith&quot;:&quot;OLDEST&quot;}</fileDroppingStrategy>
+        <inputs>
+            <apiName>inputString</apiName>
+            <definition>primitive://String</definition>
+            <masterLabel>inputString</masterLabel>
+            <referenceName>Input:inputString</referenceName>
+            <required>true</required>
+        </inputs>
+        <isCitationEnabled>false</isCitationEnabled>
+        <primaryModel>sfdc_ai__DefaultGPT41Mini</primaryModel>
+        <status>Published</status>
+        <versionIdentifier>SNHbsMHjip9HIrxt4j7R7WuXEsnjcy+zEDLIUQOP4ZE=_1</versionIdentifier>
+    </templateVersions>
+    <type>einstein_gpt__flex</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

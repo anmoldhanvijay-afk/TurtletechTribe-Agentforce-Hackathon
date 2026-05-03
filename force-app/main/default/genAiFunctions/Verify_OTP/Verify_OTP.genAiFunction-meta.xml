@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>When OTP is generated successfully and the output value is not null, automatically invoke the Verify OTP action. 
+The OTP is always a 6-digit numeric code sent to the customer&apos;s registered enduserEmailId.</description>
+    <developerName>Verify_OTP</developerName>
+    <invocationTarget>VerifyOTPService</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+    <localDeveloperName>Verify_OTP</localDeveloperName>
+    <masterLabel>Verify OTP</masterLabel>
+</GenAiFunction>

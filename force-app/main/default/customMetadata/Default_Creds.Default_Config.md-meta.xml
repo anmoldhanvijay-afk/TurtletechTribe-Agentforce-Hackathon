@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Default Config</label>
+    <protected>false</protected>
+    <values>
+        <field>Client_ID__c</field>
+        <value xsi:type="xsd:string">3MVG91oqviqJKoEFUzlFVLDhS81u7nQKcYK26y0B6B2hiBUhBLCyb0LZTeQ0KwbZOTixNTBtM9RE5dykOs3Vw</value>
+    </values>
+    <values>
+        <field>Client_Secret__c</field>
+        <value xsi:type="xsd:string">641263D0F4CFDF53B812A7185F9CE5D9A86955964B24D5A8E853E19AB1BF4723</value>
+    </values>
+    <values>
+        <field>Token_Endpoint__c</field>
+        <value xsi:type="xsd:string">https://orgfarm-ea123b5ef3.my.salesforce.com/services/oauth2/token</value>
+    </values>
+</CustomMetadata>

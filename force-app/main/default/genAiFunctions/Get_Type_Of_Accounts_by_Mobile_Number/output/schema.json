@@ -1,0 +1,59 @@
+{
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "creditCardAccounts" : {
+      "title" : "creditCardAccounts",
+      "description" : "Show account basic details",
+      "maxItems" : 2000,
+      "items" : {
+        "lightning:type" : "lightning__textType"
+      },
+      "lightning:type" : "lightning__listType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "creditCardCount" : {
+      "title" : "creditCardCount",
+      "description" : "Show count of credit cards account",
+      "lightning:type" : "lightning__integerType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "isSuccess" : {
+      "title" : "isSuccess",
+      "description" : "Make typeOfAccountFound is true",
+      "lightning:type" : "lightning__booleanType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "savingsAccounts" : {
+      "title" : "savingsAccounts",
+      "description" : "Show list of saving account",
+      "maxItems" : 2000,
+      "items" : {
+        "lightning:type" : "lightning__textType"
+      },
+      "lightning:type" : "lightning__listType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : false,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    },
+    "savingsCount" : {
+      "title" : "savingsCount",
+      "description" : "Show count of saving account",
+      "lightning:type" : "lightning__integerType",
+      "lightning:isPII" : false,
+      "copilotAction:isDisplayable" : true,
+      "copilotAction:isUsedByPlanner" : true,
+      "copilotAction:useHydratedPrompt" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

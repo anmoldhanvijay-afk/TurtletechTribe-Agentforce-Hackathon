@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiFunction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>If the customer is not verified and isVerified = false and requests any banking-related information, first retrieve the customer’s mobile number. If unavailable, use the default number +918177896748. Generate an OTP and send it to the customer’s registered email. Proceed only after successful OTP verification.</description>
+    <developerName>Process_OTP_Request</developerName>
+    <invocationTarget>OTPService</invocationTarget>
+    <invocationTargetType>apex</invocationTargetType>
+    <isConfirmationRequired>false</isConfirmationRequired>
+    <isIncludeInProgressIndicator>false</isIncludeInProgressIndicator>
+    <localDeveloperName>Process_OTP_Request</localDeveloperName>
+    <masterLabel>Process OTP Request</masterLabel>
+</GenAiFunction>

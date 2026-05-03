@@ -1,0 +1,14 @@
+{
+  "required" : [ "mobileNumber" ],
+  "unevaluatedProperties" : false,
+  "properties" : {
+    "mobileNumber" : {
+      "title" : "mobileNumber",
+      "description" : "Get Mobile number form user whatsapp. If not found then consider +918177896748",
+      "lightning:type" : "lightning__textType",
+      "lightning:isPII" : false,
+      "copilotAction:isUserInput" : false
+    }
+  },
+  "lightning:type" : "lightning__objectType"
+}

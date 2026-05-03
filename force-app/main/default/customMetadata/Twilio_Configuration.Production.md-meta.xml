@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomMetadata xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <label>Production</label>
+    <protected>false</protected>
+    <values>
+        <field>Account_SID__c</field>
+        <value xsi:type="xsd:string">AC00697f88abead2316e85b5d273a59f64</value>
+    </values>
+    <values>
+        <field>Auth_Token__c</field>
+        <value xsi:type="xsd:string">929b2231526e5ea82d8290b68c8ea0b2</value>
+    </values>
+    <values>
+        <field>Webhook_URL__c</field>
+        <value xsi:type="xsd:string">https://orgfarm-ea123b5ef3.my.salesforce.com/services/apexrest/twilio/whatsapp</value>
+    </values>
+    <values>
+        <field>WhatsApp_Number__c</field>
+        <value xsi:type="xsd:string">whatsapp:+14155238886</value>
+    </values>
+</CustomMetadata>

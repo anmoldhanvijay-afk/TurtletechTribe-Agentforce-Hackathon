@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package xmlns="http://soap.sforce.com/2006/04/metadata">
+
+    <!-- Apex -->
+    <types>
+        <members>OAuthTokenUtil</members>
+        <members>DocumentAI</members>
+        <members>OAuthService</members>
+        <members>DocumentAIService</members>
+        <members>RunDocumentAIFromCase</members>
+        <members>sfAuthService</members>
+        <members>EMICalculator</members>
+        <members>DocumentAIResponse</members>
+        <members>DocumentAIParser</members>
+        <members>DocumentAIProcessor</members>
+        <members>WhatsAppWebhook</members>
+        <members>WhatsAppQueueable</members>
+        <members>AgentforceApexService</members>
+        <members>SessionManager</members>
+        <members>OTPService</members>
+        <members>FinancialMiniStatementService</members>
+        <members>VerifyOTPService</members>
+        <members>CreateEMITransactions</members>
+        <members>TypeOfAccount</members>
+        <members>VerifyAadhaarService</members>
+        <members>GetCustomerLoans</members>
+        <members>ConfirmLoanRestructuringInvoker</members>
+        <members>FinancialStatement</members>
+        <members>TwilioWebhookHandler</members>
+        <members>TwilioService</members>
+        <members>TwilioStatusCallbackHandler</members>
+        <name>ApexClass</name>
+    </types>
+
+    <!-- Apex Trigger -->
+    <types>
+        <members>FinancialAccountBalanceTrigger</members>
+        <name>ApexTrigger</name>
+    </types>
+
+    <!-- Agentforce Bot -->
+    <types>
+        <members>New_Bank_Sathi_Service_Agent</members>
+        <name>Bot</name>
+    </types>
+
+    <!-- Flows -->
+    <types>
+        <members>Updating_Case_Record_with_OCR_Data</members>
+        <members>Update_Case_with_OCR_Data_from_Agent</members>
+        <members>Case_Approval_Update</members>
+        <members>Get_Dispute_Status</members>
+        <members>Financial_Account_Before_Insert</members>
+        <members>Financial_Account_Transaction_Manegment_After_Trigger</members>
+        <members>Case_After</members>
+        <members>Dispute_After</members>
+        <members>Confirm_Loan_Restructuring</members>
+        <name>Flow</name>
+    </types>
+
+    <!-- Flow Activation -->
+    <types>
+        <members>Updating_Case_Record_with_OCR_Data</members>
+        <members>Update_Case_with_OCR_Data_from_Agent</members>
+        <members>Case_Approval_Update</members>
+        <members>Get_Dispute_Status</members>
+        <members>Financial_Account_Before_Insert</members>
+        <members>Financial_Account_Transaction_Manegment_After_Trigger</members>
+        <members>Case_After</members>
+        <members>Dispute_After</members>
+        <members>Confirm_Loan_Restructuring</members>
+        <name>FlowDefinition</name>
+    </types>
+
+    <!-- Custom Metadata Records -->
+    <types>
+		<members>Default_Creds.Default_Config</members>
+		<members>QLabs.Org_Identifier</members>
+		<members>Twilio_Configuration.Production</members>
+		<members>Twilio_Configuration.Production2</members>
+		<members>WhatsApp_Config.Access_Token</members>
+		<members>xDO_Base_QBrix_Register.Qbrix_6_SDO_DemoBoost</members>
+		<members>xDO_Base_QBrix_Register.qbrix_0_org_beacon</members>
+		<members>xDO_Base_QBrix_Register.qbrix_6_dc_hibernate_schedule</members>
+		<name>CustomMetadata</name>
+	</types>
+
+    <!-- Remote Sites -->
+    <types>
+        <members>Twilio_Media</members>
+        <members>TwilioDocumentAPI</members>
+        <name>RemoteSiteSetting</name>
+    </types>
+
+
+    <!-- Permission Sets -->
+    <types>
+        <members>WhatsApp_Permission</members>
+        <members>New_Bank_Sathi_permission_set</members>
+        <members>Object_And_Field_Access</members>
+        <name>PermissionSet</name>
+    </types>
+
+    <!-- Profiles -->
+    <types>
+		<members>Einstein Agent User</members>
+		<members>WhatsAppWebhook Profile</members>
+		<name>Profile</name>
+	</types>
+    
+
+    <!-- Named Credential -->
+    <types>
+        <members>Twilio_API</members>
+        <name>NamedCredential</name>
+    </types>
+
+    
+    <types>
+		<members>Account.Phone_Country_Code_Required</members>
+		<name>ValidationRule</name>
+	</types>
+    <version>60.0</version>
+</Package>

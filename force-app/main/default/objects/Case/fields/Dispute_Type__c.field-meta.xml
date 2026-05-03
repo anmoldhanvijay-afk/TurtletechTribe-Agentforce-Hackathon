@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Dispute_Type__c</fullName>
+    <label>Dispute Type</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Undelivered Product or Service</fullName>
+                <default>false</default>
+                <label>Undelivered Product or Service</label>
+            </value>
+            <value>
+                <fullName>Failed Transaction</fullName>
+                <default>false</default>
+                <label>Failed Transaction</label>
+            </value>
+            <value>
+                <fullName>Refund Not Processed</fullName>
+                <default>false</default>
+                <label>Refund Not Processed</label>
+            </value>
+            <value>
+                <fullName>Products or Services Not as Described</fullName>
+                <default>false</default>
+                <label>Products or Services Not as Described</label>
+            </value>
+            <value>
+                <fullName>Defective Product</fullName>
+                <default>false</default>
+                <label>Defective Product</label>
+            </value>
+            <value>
+                <fullName>Charged Multiple Times</fullName>
+                <default>false</default>
+                <label>Charged Multiple Times</label>
+            </value>
+            <value>
+                <fullName>Outstanding Charge on Original Payment Method</fullName>
+                <default>false</default>
+                <label>Outstanding Charge on Original Payment Method</label>
+            </value>
+            <value>
+                <fullName>Overcharged</fullName>
+                <default>false</default>
+                <label>Overcharged</label>
+            </value>
+            <value>
+                <fullName>Account Debited but No Cash Dispensed by ATM</fullName>
+                <default>false</default>
+                <label>Account Debited but No Cash Dispensed by ATM</label>
+            </value>
+            <value>
+                <fullName>Fraudulent Transaction</fullName>
+                <default>false</default>
+                <label>Fraudulent Transaction</label>
+            </value>
+            <value>
+                <fullName>Disclosed OTP, Card, or Account Details</fullName>
+                <default>false</default>
+                <label>Disclosed OTP, Card, or Account Details</label>
+            </value>
+            <value>
+                <fullName>Lost or Stolen Card</fullName>
+                <default>false</default>
+                <label>Lost or Stolen Card</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>
