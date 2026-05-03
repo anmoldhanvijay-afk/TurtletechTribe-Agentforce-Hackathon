@@ -60,159 +60,238 @@
         <showInFooterMenu>false</showInFooterMenu>
     </botDialogs>
     <citationsEnabled>false</citationsEnabled>
+    <company>Bank Saathi Agent helps resolves customer inquiries.</company>
     <conversationDefinitionPlanners>
         <genAiPlannerName>New_Bank_Sathi_Service_Agent_v2_v4</genAiPlannerName>
     </conversationDefinitionPlanners>
     <conversationVariables>
         <dataType>Text</dataType>
         <developerName>accountId</developerName>
+        <includeInPrompt>true</includeInPrompt>
         <label>accountId</label>
+        <visibility>External</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
+        <description>Stores the authentication key that&apos;s used to generate the verification code.</description>
         <developerName>authenticationKey</developerName>
+        <includeInPrompt>false</includeInPrompt>
         <label>authenticationKey</label>
+        <visibility>Internal</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
         <developerName>caseNumber</developerName>
+        <includeInPrompt>true</includeInPrompt>
         <label>caseNumber</label>
+        <visibility>Internal</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
+        <description>Stores the Salesforce user ID or contact ID.</description>
         <developerName>customerId</developerName>
+        <includeInPrompt>false</includeInPrompt>
         <label>customerId</label>
+        <visibility>Internal</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
+        <description>Stores the customer ID type, whether it&apos;s a Salesforce user or a contact.</description>
         <developerName>customerType</developerName>
+        <includeInPrompt>false</includeInPrompt>
         <label>customerType</label>
+        <visibility>Internal</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
+        <description>Stores the Salesforce Case ID created by an inbound email.</description>
         <developerName>emailCaseId</developerName>
+        <includeInPrompt>false</includeInPrompt>
         <label>emailCaseId</label>
+        <visibility>External</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
+        <description>Stores the Salesforce Contact ID associated with the end user who sent the inbound email.</description>
         <developerName>endUserContactId</developerName>
+        <includeInPrompt>false</includeInPrompt>
         <label>endUserContactId</label>
+        <visibility>External</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
+        <description>Stores email address of the end user who sent the inbound email.</description>
         <developerName>endUserEmail</developerName>
+        <includeInPrompt>false</includeInPrompt>
         <label>endUserEmail</label>
+        <visibility>External</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
+        <description>Stores the Financial Account Id</description>
         <developerName>financialAccountId</developerName>
+        <includeInPrompt>true</includeInPrompt>
         <label>Financial Account Id</label>
+        <visibility>External</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Boolean</dataType>
         <developerName>isConfirmed</developerName>
+        <includeInPrompt>true</includeInPrompt>
         <label>isConfirmed</label>
+        <visibility>Internal</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Boolean</dataType>
         <developerName>isValidOTP</developerName>
+        <includeInPrompt>true</includeInPrompt>
         <label>isValidOTP</label>
+        <visibility>External</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Boolean</dataType>
+        <description>Stores a boolean value that indicates whether the customer code is verified.</description>
         <developerName>isVerified</developerName>
+        <includeInPrompt>false</includeInPrompt>
         <label>isVerified</label>
+        <visibility>Internal</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Boolean</dataType>
         <developerName>loanConfirmed</developerName>
+        <includeInPrompt>true</includeInPrompt>
         <label>loanConfirmed</label>
+        <visibility>Internal</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Number</dataType>
         <developerName>loanCount</developerName>
+        <includeInPrompt>true</includeInPrompt>
         <label>loanCount</label>
+        <visibility>Internal</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Number</dataType>
         <developerName>loanOtp</developerName>
+        <includeInPrompt>true</includeInPrompt>
         <label>loanOtp</label>
+        <visibility>Internal</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Number</dataType>
         <developerName>oldEMI</developerName>
+        <includeInPrompt>true</includeInPrompt>
         <label>oldEMI</label>
+        <visibility>Internal</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
         <developerName>OtpValue</developerName>
+        <includeInPrompt>true</includeInPrompt>
         <label>OtpValue</label>
+        <visibility>External</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Number</dataType>
         <developerName>otpValueNumber</developerName>
+        <includeInPrompt>true</includeInPrompt>
         <label>otpValueNumber</label>
+        <visibility>Internal</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Number</dataType>
+        <description>Stores the phone number</description>
         <developerName>Phone_Number</developerName>
+        <includeInPrompt>true</includeInPrompt>
         <label>Phone Number</label>
+        <visibility>External</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
+        <description>Stores the phone number text</description>
         <developerName>Phone_Number_text</developerName>
+        <includeInPrompt>true</includeInPrompt>
         <label>Phone Number text</label>
+        <visibility>External</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
         <developerName>SecondOTP</developerName>
+        <includeInPrompt>true</includeInPrompt>
         <label>SecondOTP</label>
+        <visibility>External</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
         <developerName>selectedLoanId</developerName>
+        <includeInPrompt>true</includeInPrompt>
         <label>selectedLoanId</label>
+        <visibility>Internal</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
         <developerName>selectedOption</developerName>
+        <includeInPrompt>true</includeInPrompt>
         <label>selectedOption</label>
+        <visibility>Internal</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Number</dataType>
         <developerName>transactionConfirmationCode</developerName>
+        <includeInPrompt>true</includeInPrompt>
         <label>transactionConfirmationCode</label>
+        <visibility>Internal</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
         <developerName>typeOfAccount</developerName>
+        <includeInPrompt>true</includeInPrompt>
         <label>typeOfAccount</label>
+        <visibility>External</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Boolean</dataType>
         <developerName>typeOfAccountFound</developerName>
+        <includeInPrompt>true</includeInPrompt>
         <label>typeOfAccountFound</label>
+        <visibility>External</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
         <developerName>userIntent</developerName>
+        <includeInPrompt>true</includeInPrompt>
         <label>userIntent</label>
+        <visibility>External</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
+        <description>This variable may also be referred to as VerifiedCustomerId</description>
         <developerName>VerifiedCustomerId</developerName>
+        <includeInPrompt>false</includeInPrompt>
         <label>VerifiedCustomerId</label>
+        <visibility>Internal</visibility>
     </conversationVariables>
     <conversationVariables>
         <dataType>Text</dataType>
         <developerName>whatsappMobNumber</developerName>
+        <includeInPrompt>true</includeInPrompt>
         <label>whatsappMobNumber</label>
+        <visibility>External</visibility>
     </conversationVariables>
     <copilotPrimaryLanguage>en_US</copilotPrimaryLanguage>
+    <copilotSecondaryLanguages>hi</copilotSecondaryLanguages>
+    <defaultStdObjForContactIdFltrEnabled>false</defaultStdObjForContactIdFltrEnabled>
     <entryDialog>Welcome</entryDialog>
     <intentDisambiguationEnabled>false</intentDisambiguationEnabled>
     <intentV3Enabled>false</intentV3Enabled>
+    <isScriptCompatibleAgent>false</isScriptCompatibleAgent>
+    <knowledgeActionEnabled>false</knowledgeActionEnabled>
     <knowledgeFallbackEnabled>false</knowledgeFallbackEnabled>
+    <role>Banking assistant. If not verified, trigger OTP using backend phone. If verified, answer. Never ask phone.</role>
     <smallTalkEnabled>false</smallTalkEnabled>
+    <staticPromptsEnabled>false</staticPromptsEnabled>
+    <stopRecPrompts>false</stopRecPrompts>
+    <stopWelcomePrompts>false</stopWelcomePrompts>
+    <surfacesEnabled>false</surfacesEnabled>
     <toneType>Casual</toneType>
 </BotVersion>

@@ -21,9 +21,11 @@
             </value>
         </inputParameters>
         <nameSegment>CreateEMITransactions</nameSegment>
+        <offset>0</offset>
         <storeOutputAutomatically>true</storeOutputAutomatically>
     </actionCalls>
     <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <environments>Default</environments>
     <interviewLabel>Case Approval Update {!$Flow.CurrentDateTime}</interviewLabel>
     <label>Case Approval Update</label>

@@ -18,6 +18,7 @@
             </value>
         </inputParameters>
         <nameSegment>DocumentAIProcessor</nameSegment>
+        <offset>0</offset>
         <outputParameters>
             <assignToReference>BankInformation</assignToReference>
             <name>bankInfo</name>
@@ -68,6 +69,7 @@
         </outputParameters>
     </actionCalls>
     <apiVersion>66.0</apiVersion>
+    <areMetricsLoggedToDataCloud>false</areMetricsLoggedToDataCloud>
     <assignments>
         <name>Empty_Message</name>
         <label>Empty Message</label>

@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TurtletechTribe-Agentforce-Hackathon
 Agentforce Hackathon 2026 Team TurtleTech Tribe. A multilingual self-serve banking agent built on Salesforce Financial Services Cloud for Self-Serve Robotic Customer Service Agent.Powered by Agentforce, WhatsApp, and Data Cloud — enabling Hindi-English banking, instant dispute filing, and self-serve loan restructuring without branch visits.
 
@@ -109,7 +110,7 @@ Salesforce trial org. No additional configuration is needed.
 
 ### Step 2 — Join the Twilio WhatsApp Sandbox
 To test the WhatsApp channel, send the following message from your WhatsApp:
-Send: join <paragraph-late>
+Send: join potatoes-death
 To:   +14155238886
 
 You will receive a confirmation message once you have joined the sandbox.
@@ -186,3 +187,23 @@ For any questions during judging, reach us at: kanishk.gupta@turtletechtribe.com
 
 *Submitted for Agentforce World Tour Mumbai Hackathon 2026*
 *Hackathon Portal: https://awt-mumbai-hackathon-2026-c94c8fd906ff.herokuapp.com/*
+=======
+# Salesforce DX Project: Next Steps
+
+Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+
+## How Do You Plan to Deploy Your Changes?
+
+Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+
+## Configure Your Salesforce DX Project
+
+The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+
+## Read All About It
+
+- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
+- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
+- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
+- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+>>>>>>> 8104fba (Commit message for initial commit of Agentforce Hackathon project)

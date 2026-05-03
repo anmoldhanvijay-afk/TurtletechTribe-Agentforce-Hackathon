@@ -96,31 +96,11 @@ public class SessionManager {
             LIMIT 1
         ];
        // This is main one for testing the document only
-       /* WhatsApp_Config__mdt config = [
-            SELECT Id, Access_Token2__c 
+        WhatsApp_Config__mdt config = [
+            SELECT Id, Access_Token__c 
             FROM WhatsApp_Config__mdt where DeveloperName = 'Access_Token'
             LIMIT 1
-        ]; */
-          //This is for document upload for anmol profile only (sfdc21)
-       /* WhatsApp_Config__mdt config = [
-            SELECT Id, Access_Token__c 
-            FROM WhatsApp_Config__mdt where DeveloperName = 'Access_Token2'
-            LIMIT 1
-        ];*/
-          //This is for Kalyan profile testing
-           /* WhatsApp_Config__mdt config = [
-            SELECT Id, Access_Token__c 
-            FROM WhatsApp_Config__mdt where DeveloperName = 'Access_Token3'
-            LIMIT 1];*/
-        /*WhatsApp_Config__mdt config = [
-            SELECT Id, Access_Token__c 
-            FROM WhatsApp_Config__mdt where DeveloperName = 'Access_Token_5'
-            LIMIT 1]; */
-        
- WhatsApp_Config__mdt config = [
-            SELECT Id, Access_Token__c 
-            FROM WhatsApp_Config__mdt where DeveloperName = 'Access_Token6'
-            LIMIT 1]; 
+        ]; 
         try {
         HttpRequest req = new HttpRequest();
         req.setEndpoint(mediaUrl);
